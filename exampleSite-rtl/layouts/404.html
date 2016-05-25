@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{ partial "head.html" . }}
+    <body>
+        {{ partial "navigation/navigation.html" . }}
+        <div id="top" class="container">
+            <div class="row" id="content-main">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-12 content-card">
+                            <h1>۴۰۴</h1>
+                            <h2>برگه یافت نشد</h2>
+                            <p>
+                                اوه! متأسفانه برگه‌ای که دنبالش هستید، روی این سایت پیدا نشد. لطفا از درست بودن نشانی مطمئن شوید.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    {{ partial "widgets/sidebar/search.html" . }}
+                    {{ partial "widgets/sidebar/recent.html" . }}
+                    {{ partial "widgets/sidebar/adsense.html" . }}
+                    {{ partial "widgets/sidebar/categories.html" . }}
+                    {{ partial "widgets/sidebar/donate.html" . }}
+                </div>
+            </div>
+        </div>
+        {{ partial "footer.html" . }}
+        {{ partial "foot.html" . }}
+    </body>
+</html>

@@ -1,132 +1,36 @@
-# Hugo Phlat Theme
+## RTL'ed Hugo-Phlat-Theme
+\- This repository contains rtl version of the Phlat theme. It's originally a [@nraboy](https://github.com/nraboy) work.
 
-A flat bootstrap theme for the Hugo static website engine.
+\- Contents are converted from Markdown to HTML manually by [Hugo](http://gohugo.io/) static site generator. You can host your static site on [Github Pages](https://pages.github.com/), [GitLab Pages](https://pages.gitlab.io/), Bitbucket (via [Aerobatic](https://www.aerobatic.com/)) and others.
 
-![Hugo Phlat Theme Screenshot](images/screenshot.png)
+![screenshot_rtl](https://cloud.githubusercontent.com/assets/1899175/15530309/e109eddc-2268-11e6-9346-b578ee8cc4c6.png)
 
-A functional sample of this theme can be seen in action via [Own the Web](https://www.owntheweb.net).
+### Installation
 
-## Installation
+    hugo new site my-blog
+    cd $_
+    git clone git@github.com:emzi/hugo-phlat-theme-rtl.git themes/hugo-phlat-theme-rtl
+    mv -f themes/hugo-phlat-theme-rtl/exampleSite-rtl/* .
+    hugo server --buildDrafts
 
-Use an existing Hugo project or create a fresh one before trying to install this theme.  Within the Hugo project, execute the following command from your Command Prompt (Windows) or Terminal (Mac and Linux):
+---
+### Posts
+- Each post must be located in `content/post`
+- A post should be started with the below snippet (called 'frontmatter') at the beginnig:
 
-```
-mkdir themes
-cd themes
-git clone https://github.com/nraboy/hugo-phlat-theme
-```
+        +++
+        author = "Author"
+        categories = [ "Category" ]
+        date = "YYYY-MM-DDThh:mm:ss+03:30"
+        description = "Description"
+        draft = true/false
+        tags = [ "tag1", "tag2" ]
+        title = "Title"
+        +++
 
-See the [official Hugo themes documentation](http://gohugo.io/themes/installing) for more info.
+    `YYYY-MM-DD` should be in Gregorian date. `hh:mm:ss` refers to time and don't touch `03:30` which is [Iran UTC time offset](https://en.wikipedia.org/wiki/UTC%2B03:30). You may also see `04:30` that is because of detected summer clock on author's OS.
+    When you are still working on your post, set the `draft` as `true`. Once completed, ensure it’s no longer a draft: `hugo undraft content/post/<file-name>.md` or simply replace 'true' with 'false'.
 
-## Usage
+- Put images in `static/img` directory.
 
-This theme expects the standard Hugo site layout.
-
-```
-.
-└── content
-    ├── post
-    |   ├── post1.md
-    |   └── post2.md
-    ├── page
-    |   ├── about.md
-    |   ├── contact.md
-```
-
-Run `hugo --theme=hugo-phlat-theme` to generate your site!
-
-## Configuration
-
-This theme relies heavily on a well crafted `config.toml` file.  It will consist of both optional and required parameters.
-
-### Required Parameters
-
-These parameters are required for the theme to compile and function correctly.
-
-```toml
-baseurl = "http://replace-this-with-your-hugo-site.com/"
-languageCode = "en-us"
-title = "Own the Web"
-
-[permalinks]
-    post = "/:year/:month/:slug/"
-    page = "/:slug/"
-
-[taxonomies]
-    tag = "tags"
-    category = "categories"
-
-[params]
-    keywords = ["default", "keywords", "if", "no", "front", "matter"]
-    description = "A description that will appear as a default if front matter does not exist"
-```
-
-### Optional Parameters
-
-These parameters are optional, but including them will make your static website look nicer and take advantage of what the theme offers.
-
-#### Header Menu
-
-These menu items appear in the top right of the screen or within the drop list on mobile or smaller screen devices.
-
-```toml
-[[menu.header]]
-    name = "Home"
-    weight = 1
-    url = "/"
-
-[[menu.header]]
-    name = "Resources"
-    weight = 2
-    url = "/resources/"
-
-[[menu.header]]
-    name = "Contact"
-    weight = 3
-    url = "/contact/"
-```
-
-#### Footer Menu
-
-These menu items appear in the bottom left of the screen.
-
-```toml
-[[menu.footer]]
-    name = "Privacy Policy"
-    weight = 1
-    url = "/privacy-policy/"
-
-[[menu.footer]]
-    name = "Sponsors"
-    weight = 2
-    url = "/sponsors/"
-```
-
-#### Other Parameters
-
-Many of these parameters are social media links that appear at the bottom right of the screen in the footer.  Other parameters include Adsense identification numbers, Google Analytics, and similar.
-
-```toml
-[params]
-    google_analytics = "UA-XXXXXXX-YY"
-    google_adsense = "ca-pub-XXXXXXXX"
-    disqus = "site_name_here"
-    google_webmaster = ""
-    bing_webmaster = ""
-    alexa = ""
-    twitter = "https://www.twitter.com/nraboy"
-    googleplus = ""
-    linkedin = ""
-    youtube = ""
-    paypal = ""
-```
-
-## About the Author
-
-Phlat was designed and built by [Nic Raboy](https://www.nraboy.com) in San Francisco, California.
-
-If you like this theme let me know!  You can reach me easiest on Twitter at [@nraboy](https://www.twitter.com).
-
-## License
-
-This theme is released under the MIT license.  For more information read the [License](LICENSE.md).
+\+ [Read More](https://github.com/emzi/hugo-phlat-theme-rtl/blob/master/READMORE.md)

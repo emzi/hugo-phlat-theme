@@ -1,0 +1,57 @@
+baseurl                 = "http://replace-this-with-your-hugo-site.com/"
+languageCode            = "fa-ir"
+title                   = "نام وبلاگ شما در اینجا"
+theme                   = "hugo-phlat-theme-rtl"
+
+[permalinks]
+    post                = "/:year/:month/:slug/"
+    page                = "/:slug/"
+
+[taxonomies]
+    tag                 = "tags"
+    category            = "categories"
+
+# The header menu will appear as an inline-list at the top right of the page
+[[menu.header]]
+    name                = "خانه"
+    weight              = 1
+    url                 = "/"
+
+[[menu.header]]
+    name                = "درباره"
+    weight              = 2
+    url                 = "/درباره/"
+
+[[menu.header]]
+    name                = "خوراک"
+    weight              = 3
+    url                 = "/index.xml"
+
+# The footer menu will appear as an inline-list at the bottom left of the footer found at the bottom of the screen
+[[menu.footer]]
+    name                = "پروانه درون‌مایه این تارنما CC BY-SA می‌باشد."
+    weight              = 1
+    url                 = "/پروانه/"
+[params]
+    keywords            = ["default", "keywords", "if", "no", "front", "matter"]
+    description         = "A description that will appear as a default if front matter does not exist"
+    google_analytics    = "UA-XXXXX-YY"
+    google_adsense      = "ca-pub-XXXXXX" #has been disabled
+    disqus              = "shortname"
+    google_webmaster    = ""
+    bing_webmaster      = ""
+    alexa               = ""
+    favicon             = ""
+
+# Social media icons and links that appear in the footer
+[social]
+    twitter             = "https://www.twitter.com/kermanlug"
+    googleplus          = "https://plus.google.com/NAME_HERE"
+    linkedin            = "https://www.linkedin.com/in/NAME_HERE"
+    youtube             = "https://www.youtube.com/users/NAME_HERE"
+    paypal              = "https://paypal.me/NAME_HERE"
+    instagram           = ""
+    reddit              = ""
+    email               = ""
+    pinterest           = ""
+    wordpress           = ""

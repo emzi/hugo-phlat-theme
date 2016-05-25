@@ -1,0 +1,42 @@
+/*=============================
+=            How to RTL            =
+=============================*/
+/* The main part of RTLing work is done by https://cdnjs.com/libraries/bootstrap-rtl */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-rtl/3.2.0-rc2/css/bootstrap-rtl.min.css');
+
+/*=============================
+=            fonts            =
+=============================*/
+@font-face {
+    font-family: 'Vazir';
+    src: url('../fonts/Vazir.woff') format('woff');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('../fonts/Vazir-Bold.woff') format('woff');
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Vazir', 'ubuntu' !important;
+    /*font-size: 16px !important;*/
+}
+
+/*=============================
+=            RTL            =
+=============================*/
+.navbar-right,
+.navbar-toggle {
+    float: left !important;
+}
+
+.fa {
+    padding-left: 5px;
+    padding-right: auto;
+}
+
+pre {
+    direction: ltr;
+}

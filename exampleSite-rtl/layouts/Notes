@@ -1,0 +1,44 @@
+List of Customizations
+
+#-------------------------------------------------
+# partials/widgets/sidebar/recent.html
+Translation: Resent Posts --> تازه‌ها
+
+#-------------------------------------------------
+# partials/wigets/sidebar/search.html 
+Translation: Search --> جستجو
+
+#-------------------------------------------------
+# partials/wigets/sidebar/adsense.html
+Disabled
+
+#-------------------------------------------------
+# partials/wigets/sidebar/categories.html
+Translation: دسته‌ها
+
+#-------------------------------------------------
+# partials/wigets/sidebar/donate.html
+Used as 'About us'!
+
+#-------------------------------------------------
+# partials/head.html
+Added: <link rel="stylesheet" href="{{ .Site.BaseURL }}css/rtl.css" />
+
+#-------------------------------------------------
+# partials/foot.html
+Erased: Back to top
+
+#-------------------------------------------------
+# partials/footer.html
+Some phrases have been translated
+
+#-------------------------------------------------
+# partials/pagination.html
+Translation: تازه‌تر - کهنه‌تر
+#-------------------------------------------------
+# 404.html
+Translating all contents
+
+#-------------------------------------------------
+# index.html
+Translation: Read more --> دنباله نوشتار
